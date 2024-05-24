@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JashnGala</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <!-- for modal -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="../css/index.css">
+<script src="../jscript/index.js"></script>
+
+</head>
+<body>
+  <nav class="navbar bg-dark border-bottom border-bod">
+    <div class="container-fluid"> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border: none; background: none;">
+        <span></span><i class="fa-solid fa-bars" style="color: #B197FC;"></i></span> 
+      </button>
+      <a class="navbar-brand mx-auto" href="#">
+        <img src="../images/logo.png" alt="logo" style="height: 60px;">
+      </a>
+      <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              HOME<br>
+              ABOUT <br>
+              FAQs 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-md-block">
+        <button class="btn login-btn" type="button" onclick="LoginPage();">LOGIN</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="center-carousel">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../images/nawroz.png" class="d-block w-100" alt="banner">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/banner9.jpg" class="d-block w-100" alt="banner">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/tea.jpg" class="d-block w-100" alt="banner">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="carousel-caption d-none d-md-block">
+      <h2>Step Into the Vibrant World of Persian Culture in Peterborough</h2> <br>
+      <h5 class="one">Create your profile today and customize your journey through Persian arts, cuisine, and community events tailored just for you</h5>
+      <h5 class="two">Just browsing? Dive into Peterborough's Persian events as a guest - no sign-up needed.</h5>
+      <button class="btn custom-btn" type="button" onclick="HomePage();">EXPLORE AS A GUEST</button>
+    </div>
+  </div>
+
+  <div class="background-image">
+    <div class="carousel-caption d-md-block">
+      <h2 class="h2">Step Into the Vibrant World of Persian Culture in Peterborough</h2> <br>
+      <div>
+        <button class="btn custom-btn" type="button" onclick="LoginPage();">LOGIN</button>
+      </div>
+      <h5 class="one">Create your profile today and customize your journey through Persian arts, cuisine, and community events tailored just for you</h5>
+      <h5 class="two">Just browsing? Dive into Peterborough's Persian events as a guest - no sign-up needed.</h5>
+      <button class="btn login-btn" type="button" onclick="HomePage();">EXPLORE AS A GUEST</button>
+    </div>
+  </div>
+</body>
+</html>

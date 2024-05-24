@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JashnGala</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <!-- for modal -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="../css/events.css">
+<!-- <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script> -->
+
+<script src="../jscript/index.js"></script></head>
+<body>
+  <nav class="navbar bg-dark border-bottom border-bod">
+      <div class="container-fluid"> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border: none; background: none;">
+          <span ><i class="fa-solid fa-bars" style="color: #B197FC;"></i></span> 
+        </button>
+        <a class="navbar-brand mx-auto" href="#">
+          <img src="../images/logo.png" alt="logo" style="height: 60px;">
+        </a>
+        <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <ul>
+                  <li><a href="../html/events.html">HOME</a></li>
+                  <li><a href="#">ABOUT</a></li>
+                  <li>
+                    <button type="button" class="btn btn-info btn-lg faq" data-toggle="modal" data-target="#myModal"> FAQs</button>
+                   
+                  </li>
+                  <li><a href="#">Contact Details</a></li>
+                </ul>
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body"><div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              How can I book my entry to the event?
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Click on <code>Book Now</code> button present on the events card. You will be required to fill out a form asking your details for confirmation. You will be notified with a confirmation message if the booking is successful.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              How can I see venue of the Events?
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              All the events have been marked on the Maps present in the Home Page. Click on the markers to check which event is happening on that location.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              How can I logout?
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Click on the Accounts button icon. A popup will appear from where you can either <code>Stay</code> or <code>Logout</code> from the website.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="btn" type="button"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #B197FC;"></i></i></button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#LogoutModal" style="border: none; background: none;">
+            <span > <i class="fa-solid fa-user fa-xl" style="color: #B197FC;"></i></span> 
+          </button>
+          <div class="modal fade" id="LogoutModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Are you sure you want to Logout?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" style="background: blueviolet;" data-bs-dismiss="modal">STAY</button>
+                  <button type="button" class="btn btn-primary" style="background-color: red;" onclick="IndexPage()">LOGOUT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>
+  <div class="maps-container">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=11YyILisZOyyALuer1JTcTptOP0KBK3Q&ehbc=2E312F&noprof=1"  style="border:0;" allowfullscreen="" loading="lazy" width="100%" height="450"></iframe>
+</div>
+
+  <div class="event-container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/food.jpg" alt="Nawroz Celebration"  class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Nawroz Celebration</h5>
+            <p class="card-text">
+              Date: March 21, 2024 <br>
+              Time: 6:00 PM<br>
+              Location: The Norfolk Venue<br>
+              Ticket: £35 <br>
+              Description: Join us for the Nawroz Celebration, marking the Persian New Year with music, dance, and traditional food.<br>
+              <div class="button-center">
+                <button class="btn btn-primary book-btn" onclick="bookEvent()">Book Now</button>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/persian-party.jpg" alt="Persian Music Ensemble"  class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Concert: Persian Music Ensemble</h5>
+            <p class="card-text">
+              Date: April 10, 2024 <br>
+              Time: 7:30 PM           <br>
+              Location: Key Theater Peterborough <br>
+              Ticket: £75 <br>
+              Description: Experience the mesmerizing sounds of Persian music performed by talented musicians from around the world. <br>
+              <div class="button-center">
+                <button class="btn btn-primary book-btn" onclick="bookEvent()">Book Now</button>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/bahar.jpg" alt="Bahar Festival"  class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Bahar Festival</h5>
+            <p class="card-text">
+              Date: May 5, 2024<br>
+              Time: 11:00 AM<br>
+              Location: Nene Park peterborough<br>
+              Ticket: £20 (Refreshments included) <br>
+              Description: Celebrate the arrival of spring with cultural performances, art exhibitions, and delicious Persian cuisine.<br>
+              <div class="button-center">
+                <button class="btn btn-primary book-btn" onclick="bookEvent()">Book Now</button>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<footer>
+
+<ul>
+  <p>&copy; 2024 JashnGala</p>
+  <li><a href="#">Instagram</a> </li>
+  <li><a href="#">Whatsapp</a></li>
+  <li><a href="#"> More From Us</a></li>
+</ul>
+</footer>
+
+</body>
+</html>
+
+</body>
+</html>
+
+      
+    

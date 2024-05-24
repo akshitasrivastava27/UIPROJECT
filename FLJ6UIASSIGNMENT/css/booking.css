@@ -1,0 +1,218 @@
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+  font-family: ui-monospace;
+  font-size: 2rem;
+  pointer-events: auto;
+  background-color: #271f1f5c;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 0.3rem;
+}
+.btn-secondary {
+  color: #fff;
+  background-color: #db0a16;
+  border-color: #41101f;
+}
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 0px solid #dee2e6;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+}
+.modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .75rem;
+    border-top: 0px solid #dee2e6;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+}
+
+.form-background {
+    background-image: url('../images/backgroundimg.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+.form-background:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background: rgba(0, 0, 0, 0.5); Black background with opacity */
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    background: #1a0e044d;
+    margin-top: 3rem;
+}
+
+h2{ 
+    margin-bottom: 0.5rem;
+    font-weight: unset;
+    font-family: system-ui;
+    line-height: 1.2;  
+    color:white;
+}
+
+.form-background {
+    background-color: #f8f9fa2d;  /* Light background to enhance form visibility */
+    padding: 20px;
+  }
+  
+  .form-control, .btn {
+    border-radius: 0.25rem;
+  }
+  .col-auto {
+    flex: 0 0 auto;
+    width: auto;
+}
+
+.col-form-label {
+  padding-top: calc(.375rem + 1px);
+  padding-bottom: calc(.375rem + 1px);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  font-family: fangsong;
+  line-height: 0.5;
+}
+
+.input-group .btn {
+  border: 2px solid #11208d;
+  color: #fff;
+  font-size: larger;
+  font-weight: 700;
+  background: #4a1ccd;
+}
+
+  .value-button {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    margin: 0;
+    text-align: center;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    cursor: pointer;
+  }
+  
+  #number {
+    max-width: 100px;
+    text-align: center;
+  }
+ 
+  .custom-btn {
+    color: #f5f5f5;
+    background-color: #4a1ccd;
+    border-color: #00296b;
+    font-weight: 700;
+    /* border: revert-layer; */
+    padding: 9px 20px;
+    border-radius: 5px;
+}
+.custom-btn:hover {
+    background-color: #fcfcfc00; /* Darker green on hover */
+    border: none; /* Ensures no border on hover */
+}
+
+.text-center {
+  text-align: center !important;
+  margin-bottom: 2rem;
+}
+footer {
+    background-color: black; 
+    padding: 20px 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    bottom:0;
+  }
+
+
+footer ul {
+    list-style-type: none; 
+    text-align: center;
+    padding: 0;
+  }
+
+  footer ul li {
+    display: inline; 
+    margin-right: 20px;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: #f7f8fa; 
+    font-weight: bold;
+  }
+
+  footer ul li a:hover {
+    text-decoration: underline; 
+  }
+
+
+  .faq{
+    font-size: 2rem;
+    color: #fff;
+    background-color: #17a2b842;
+    border-color: #17a2b800;
+}
+
+.accordion-header {
+    background-color: #e9ebef;
+    padding: 0px;
+}
+.modal-header .close {
+    padding: 1rem 1rem;
+    color: cyan;
+    font-size: larger;
+    margin: -1rem -1rem -1rem auto;
+}
+  /* Style the accordion button */
+  .accordion-button {
+    background-color: transparent;
+    color: #333;
+    /* font-weight: bold; */
+    font-family: sans-serif;
+
+  }
+  
+  .accordion-body {
+    padding: 4px;
+    font-size: large;
+    font-family: sans-serif;
+    background: cadetblue;}
+  
+  /* Style the active accordion button */
+  .accordion-button.active {
+    background-color: #ddd;
+  }
+  
+  .modal-body a {
+    color: inherit; /* Use the default text color */
+    text-decoration: none; /* Remove underline */
+  }
+
+  /* Remove bullet points from list items */
+  .modal-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }

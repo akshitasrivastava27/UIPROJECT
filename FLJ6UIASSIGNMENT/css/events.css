@@ -1,0 +1,183 @@
+.event-container {
+    width: 100%; /* Ensures it takes full width */
+    background-color: #f8f9fa; /* Temporary background color to check visibility */
+    padding: 20px; /* Adds some space inside the container */
+    border: 1px solid #bfb3ae;
+    z-index: 1; /* Ensure it is above or equal to the map in stacking order */
+    position: relative; /* If needed to establish a new stacking context */
+}
+
+.maps-container {
+    width: 100%;
+    height: 450px; /* Explicit height */
+    overflow: hidden; /* Ensures no overflow issues */
+    clear: both; /* If using floats, clear them */
+}
+
+@media (max-width: 768px) {
+    .event-container {
+        display: block; /* Override any non-visible display settings */
+    }
+}
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px; /* Smaller fixed height for mobile */
+    }
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    font-family: ui-monospace;
+    font-size: 2rem;
+    pointer-events: auto;
+    background-color: #271f1f5c;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 0.3rem;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #db0a16;
+    border-color: #41101f;
+    border-radius: 9px;
+    display: flex;
+    font-family: revert;
+    font-size: 1rem;
+    line-height: normal;
+}
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 0px solid #dee2e6;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+}
+.modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .75rem;
+    border-top: 0px solid #dee2e6;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgb(181 139 44 / 90%);
+    border-radius: .25rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.card-img-top {
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distorting aspect ratio */
+    width: 100%; /* Ensures the image spans the full width of the card */
+}
+
+.btn-primary {
+    color: #f5f5f5;
+    background-color: #4a1ccd;
+    border-color: #00296b;
+    border-radius: 9px;
+    display: flex;
+    font-family: revert;
+    font-size: 1rem;
+    line-height: normal;
+}
+
+.faq{
+    font-size: 2rem;
+    color: #fff;
+    background-color: #17a2b842;
+    border-color: #17a2b800;
+}
+
+.accordion-header {
+    background-color: #e9ebef;
+    padding: 0px;
+}
+.modal-header .close {
+    padding: 1rem 1rem;
+    color: cyan;
+    font-size: larger;
+    margin: -1rem -1rem -1rem auto;
+}
+  /* Style the accordion button */
+  .accordion-button {
+    background-color: transparent;
+    color: #333;
+    /* font-weight: bold; */
+    font-family: sans-serif;
+
+  }
+  
+  .accordion-body {
+    padding: 4px;
+    font-size: large;
+    font-family: sans-serif;
+    background: cadetblue;}
+  
+  /* Style the active accordion button */
+  .accordion-button.active {
+    background-color: #ddd;
+  }
+  
+  .modal-body a {
+    color: inherit; /* Use the default text color */
+    text-decoration: none; /* Remove underline */
+  }
+
+  /* Remove bullet points from list items */
+  .modal-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+footer {
+    background-color: black; 
+    padding: 20px 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    bottom:0;
+  }
+
+
+footer ul {
+    list-style-type: none; 
+    text-align: center;
+    padding: 0;
+  }
+
+  footer ul li {
+    display: inline; 
+    margin-right: 20px;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: #f7f8fa; 
+    font-weight: bold;
+  }
+
+  footer ul li a:hover {
+    text-decoration: underline; 
+  }
+
+ 

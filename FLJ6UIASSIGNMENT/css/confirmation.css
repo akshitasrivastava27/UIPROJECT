@@ -1,0 +1,135 @@
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    font-family: ui-monospace;
+    font-size: 2rem;
+    pointer-events: auto;
+    background-color: #271f1f5c;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 0.3rem;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #db0a16;
+    border-color: #41101f;
+}
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 0px solid #dee2e6;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+}
+.modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .75rem;
+    border-top: 0px solid #dee2e6;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+}
+
+.confirmation-container {
+  width: 100%;
+  background-color: #dcd5ed;
+  padding: 20px;
+  color: #232267;
+  z-index: 1;
+  position: relative;
+}
+
+.custom-btn {
+  background-color: #4a1ccd;
+  color: beige;
+}
+
+footer {
+    background-color: black; 
+    padding: 20px 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    bottom:0;
+  }
+
+
+footer ul {
+    list-style-type: none; 
+    text-align: center;
+    padding: 0;
+  }
+
+  footer ul li {
+    display: inline; 
+    margin-right: 20px;
+  }
+ footer p{
+  text-align: center;
+ }
+  footer ul li a {
+    text-decoration: none;
+    color: #f7f8fa; 
+    font-weight: bold;
+  }
+
+  footer ul li a:hover {
+    text-decoration: underline; 
+  }
+
+  .faq{
+    font-size: 2rem;
+    color: #fff;
+    background-color: #17a2b842;
+    border-color: #17a2b800;
+}
+
+.accordion-header {
+    background-color: #e9ebef;
+    padding: 0px;
+}
+.modal-header .close {
+    padding: 1rem 1rem;
+    color: cyan;
+    font-size: larger;
+    margin: -1rem -1rem -1rem auto;
+}
+  /* Style the accordion button */
+  .accordion-button {
+    background-color: transparent;
+    color: #333;
+    /* font-weight: bold; */
+    font-family: sans-serif;
+
+  }
+  
+  .accordion-body {
+    padding: 4px;
+    font-size: large;
+    font-family: sans-serif;
+    background: cadetblue;}
+  
+  /* Style the active accordion button */
+  .accordion-button.active {
+    background-color: #ddd;
+  }
+  
+  .modal-body a {
+    color: inherit; /* Use the default text color */
+    text-decoration: none; /* Remove underline */
+  }
+
+  /* Remove bullet points from list items */
+  .modal-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
